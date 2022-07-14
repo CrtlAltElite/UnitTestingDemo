@@ -22,3 +22,5 @@ class DogTestCase(TestCase):
         self.dog.change_name('buster')
         self.assertTrue(self.dog.name=='Buster')
     
+if __name__ == "__main__":
+    main()

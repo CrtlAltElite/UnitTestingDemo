@@ -25,5 +25,17 @@ class FirstCTestCase(TestCase):
     def test_4_no_con(self):
         self.assertFalse(firstc('euouae'))
 
-    def test_5_con_first_with_caps(self):
+    def test_5_all_numbers(self):
+        self.assertFalse(firstc("1234567"))
+
+    def test_6_cont_numbers(self):
+        self.assertEqual(firstc("123k567"), "k")
+
+    def test_7_con_first_with_caps(self):
         self.assertTrue(firstc('CAT')=='C')
+
+    def test_8_con_second_with_caps(self):
+        self.assertTrue(firstc('OBO')=='B')
+
+    
+
