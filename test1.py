@@ -37,5 +37,6 @@ class FirstCTestCase(TestCase):
     def test_8_con_second_with_caps(self):
         self.assertTrue(firstc('OBO')=='B')
 
-    
+    def test_9_puncs_with_con(self):
+        self.assertTrue(firstc(',.?k?.[]')=='k')
 
