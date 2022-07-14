@@ -1,7 +1,7 @@
 # given a string return the first consentant letter of the string, if not con return false
 def firstc(string):
     for letter in string:
-        if letter.isalpha() letter.lower() not in {'a','e','i','o','u'}:
+        if letter.isalpha() and letter.lower() not in {'a','e','i','o','u'}:
             return letter
     return False
 
